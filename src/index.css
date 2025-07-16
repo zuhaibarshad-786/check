@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #1976d2;
+  margin-bottom: 1.5rem;
+}
+
+.goal-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.goal-form input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #90caf9;
+  border-radius: 8px;
+}
+
+.goal-form input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.goal-form button {
+  padding: 0.75rem 1.2rem;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.goal-form button:hover {
+  background-color: #1565c0;
+}
+
+.goal-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.goal-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.goal-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.goal-list input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.goal-list button.delete-btn {
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.goal-list button.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.quote-box {
+  background: #e3f2fd;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #1976d2;
+  border-radius: 8px;
+  font-style: italic;
+  margin-bottom: 1.8rem;
+  color: #0d47a1;
+  text-align: left;
+}
+
+.no-goals {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
